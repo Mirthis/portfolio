@@ -1,5 +1,7 @@
 // "use client";
 import AnimatedText from "@/components/AnimatedText";
+import ContactDialog from "@/components/ContactDialog";
+import ContactTrigger from "@/components/ContactTrigger";
 import Container from "@/components/Container";
 import HireMe from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
@@ -11,7 +13,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import heroPicture from "/public/images/hero.png";
-import ligthbulb from "/public/images/svgs/miscellaneous_icons.svg";
 
 export const metadata: Metadata = getPageMetadata("Home");
 
@@ -55,12 +56,12 @@ export default function Home() {
                 >
                   Resume <LinkArrow className="w-6 ml-1 " />
                 </Link>
-                <Link
-                  href="mailto:dummy@example.com"
-                  className="text-lg md:text-base font-medium capitalize underline"
-                >
-                  Contact
-                </Link>
+
+                <ContactTrigger>
+                  <button className="hover:cursor-pointer text-lg md:text-base font-medium capitalize underline">
+                    Contact
+                  </button>
+                </ContactTrigger>
               </div>
             </div>
           </div>

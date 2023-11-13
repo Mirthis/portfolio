@@ -15,9 +15,9 @@ const EducationItem = ({
   info,
 }: {
   type: string;
-  time: string;
+  time?: string;
   place: string;
-  info: string;
+  info?: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
   return (
@@ -35,9 +35,9 @@ const EducationItem = ({
           {type}
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-          {time} | {place}
+          {time && time + " | "} {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        {info && <p className="font-medium w-full md:text-sm">{info}</p>}
       </motion.div>
     </li>
   );

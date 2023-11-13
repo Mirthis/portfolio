@@ -20,7 +20,7 @@ const ExperienceItem = ({
   company: string;
   companyLink: string;
   time: string;
-  address: string;
+  address?: string;
   work: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
@@ -35,13 +35,13 @@ const ExperienceItem = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitaliza font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           {companyLink ? (
             <Link
               href={companyLink}
               target="_blank"
-              className="text-primary dark:text-primaryDark capitalize"
+              className="text-primary dark:text-primaryDark normal-case"
             >
               @{company}
             </Link>

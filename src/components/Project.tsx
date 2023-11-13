@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { GithubIcon } from "./Icons";
+import TechIcon from "./TechIcon";
 
 const Project = ({
   type,
@@ -9,12 +10,14 @@ const Project = ({
   image,
   url,
   githubUrl,
+  techs,
 }: {
   type: string;
   title: string;
   image: string;
   url: string;
   githubUrl: string;
+  techs: string[];
 }) => {
   return (
     <article className="p-6 w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light bg-light dark:bg-dark relative xs:p-4">
@@ -46,6 +49,11 @@ const Project = ({
             {title}
           </h2>
         </Link>
+        <div className="flex gap-x-1">
+          {techs.map((tech) => (
+            <TechIcon key={tech} tech={tech} className="w-8 h-8" />
+          ))}
+        </div>
         <div className=" flex items-center space-x-4 justify-between w-full">
           <Link
             href={url}

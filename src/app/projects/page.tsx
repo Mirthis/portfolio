@@ -24,13 +24,22 @@ const ProjectsPage = () => {
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
+              <FeaturedProject {...projectsData["simpledayplanner"]} />
+            </div>
+            <div className="col-span-12">
               <FeaturedProject {...projectsData["smartapply"]} />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project {...projectsData["coverletterai"]} />
             </div>
             <div className="col-span-6 sm:col-span-12 ">
+              <Project {...projectsData["portfolioV2"]} />
+            </div>
+            <div className="col-span-6 sm:col-span-12 ">
               <Project {...projectsData["perfi"]} />
+            </div>
+            <div className="col-span-6 sm:col-span-12 ">
+              <Project {...projectsData["portfolioV1"]} />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project {...projectsData["poknft"]} />

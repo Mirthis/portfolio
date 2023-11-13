@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { GithubIcon } from "./Icons";
+import {
+  FramerIcon,
+  GithubIcon,
+  NextIcon,
+  ReactIcon,
+  TailwindIcon,
+  TypeScriptIcon,
+} from "./Icons";
+import TechIcon from "./TechIcon";
 
 const FeaturedProject = ({
   type,
@@ -10,6 +18,7 @@ const FeaturedProject = ({
   image,
   url,
   githubUrl,
+  techs,
 }: {
   type: string;
   title: string;
@@ -17,6 +26,7 @@ const FeaturedProject = ({
   image: string;
   url: string;
   githubUrl?: string;
+  techs: string[];
 }) => {
   return (
     <article className="p-12 w-full flex lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl  items-center justify-between xs:p-4 rounded-3xl border rounded-br-2xl border-solid border-dark dark:border-light bg-light dark:bg-dark shadow-2xl relative">
@@ -50,6 +60,15 @@ const FeaturedProject = ({
             {title}
           </h2>
         </Link>
+        <div className="flex gap-x-1">
+          {techs.map((tech) => (
+            <TechIcon
+              key={tech}
+              tech={tech}
+              className="w-8 h-8 sm:h-6  sm:w-6"
+            />
+          ))}
+        </div>
         <p className="font-medium sm:text-sm">{summary}</p>
         <div className=" flex items-center space-x-4">
           {githubUrl && (
