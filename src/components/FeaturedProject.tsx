@@ -65,7 +65,7 @@ const FeaturedProject = ({
             <TechIcon
               key={tech}
               tech={tech}
-              className="w-8 h-8 sm:h-6  sm:w-6"
+              className="w-7 h-7 sm:h-5  sm:w-5"
             />
           ))}
         </div>

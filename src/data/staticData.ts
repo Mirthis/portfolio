@@ -57,12 +57,12 @@ export const techIcons = {
 export const projectsData = {
   simpledayplanner: {
     id: "simpledayplanner",
-    image: "smartapply.webp",
+    image: "simpledayplanner.jpg",
     title: "Simple Day Planner",
     summary:
       "Not a to-do list, not a calendar, but a simple way to plan your day at a glance.",
     type: "Full-stack",
-    url: "https://www.smartapply.app/",
+    url: "https://www.simpledayplanner.com/",
     techs: [
       "Next.js",
       "React",
@@ -74,7 +74,7 @@ export const projectsData = {
   },
   smartapply: {
     id: "smartapply",
-    image: "smartapply.webp",
+    image: "smartapply.jpg",
     title: "Smart Apply",
     summary:
       "AI powered tools to help with job applications: personalized cover letters, interview simulation and multiple choice questions to help you land your dream job.",
@@ -136,29 +136,29 @@ export const projectsData = {
     summary:
       "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
     type: "Front-end",
-    url: "https://github.com/Mirthis/cryptoverse-webapp",
-    githubUrl: "https://cryptoverse-mirthis.netlify.app/",
+    url: "https://cryptoverse-mirthis.netlify.app/",
+    githubUrl: "https://github.com/Mirthis/cryptoverse-webapp",
     techs: ["React"],
   },
   portfolioV1: {
     id: "portfolioV1",
-    image: "portfolio.jpg",
+    image: "portfolio-v1.jpg",
     title: "Portfolio v1",
     summary:
       "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
     type: "Front-end",
-    url: "https://github.com/Mirthis/cryptoverse-webapp",
-    githubUrl: "https://cryptoverse-mirthis.netlify.app/",
+    url: "https://www.andreacardinale.me/",
+    githubUrl: "https://github.com/Mirthis/portfolio-v1",
     techs: ["Next.js", "React", "Tailwind CSS"],
   },
   portfolioV2: {
     id: "portfolioV2",
-    image: "portfolio.jpg",
+    image: "portfolio-v2.jpg",
     title: "Portfolio v2",
     summary: "This is the site you're currently browsing :)",
     type: "Front-end",
-    url: "https://github.com/Mirthis/cryptoverse-webapp",
-    githubUrl: "https://cryptoverse-mirthis.netlify.app/",
+    url: "https://www.andreacardinale.me/",
+    githubUrl: "https://github.com/Mirthis/portfolio",
     techs: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer"],
   },
 };

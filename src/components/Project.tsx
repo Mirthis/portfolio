@@ -51,7 +51,11 @@ const Project = ({
         </Link>
         <div className="flex gap-x-1">
           {techs.map((tech) => (
-            <TechIcon key={tech} tech={tech} className="w-8 h-8" />
+            <TechIcon
+              key={tech}
+              tech={tech}
+              className="w-7 h-7 sm:h-5  sm:w-5"
+            />
           ))}
         </div>
         <div className=" flex items-center space-x-4 justify-between w-full">

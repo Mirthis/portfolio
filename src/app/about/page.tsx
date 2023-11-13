@@ -11,7 +11,7 @@ import { getPageMetadata } from "@/lib/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 
-import profilePicture from "/public/images/profile.jpg";
+// import profilePicture from "/";
 
 export const metadata: Metadata = getPageMetadata("About");
 
@@ -61,7 +61,7 @@ const AboutPage = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 alt="Andrea Cardainele"
-                src={profilePicture}
+                src="/images/profile.jpg"
                 className="w-full h-auto rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-wdith: 1280px) 50vw, 33vw"

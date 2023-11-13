@@ -17,7 +17,7 @@ const requestSchema = contactFormSchema.extend({
   token: z.string().min(1),
 });
 
-export const validateRecaptcha = async (token: string) => {
+const validateRecaptcha = async (token: string) => {
   const captchaResponse = await fetch(
     `https://www.google.com/recaptcha/api/siteverify`,
     {
