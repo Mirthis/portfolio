@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import GoogleAnalyticsWrapper from "@/components/GoogleAnalyticsWrapper";
 import NavBar from "@/components/NavBar";
 import ThemeProvider from "@/components/ThemeProvider";
 
@@ -22,6 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <GoogleAnalyticsWrapper />
+
       <body
         className={`${montserrat.variable} font-mont text-dark dark:text-light bg-light dark:bg-dark`}
       >
