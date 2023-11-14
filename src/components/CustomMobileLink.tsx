@@ -18,7 +18,7 @@ const CustomMobileLink = ({
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(href);
+    router.push(href, { scroll: false });
     setMenuOpen(false);
   };
 

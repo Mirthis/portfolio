@@ -15,7 +15,7 @@ const CustomLink = ({
   const pathName = usePathname();
 
   return (
-    <Link href={href} className={`relative group ${className}`}>
+    <Link href={href} className={`relative group ${className}`} scroll={false}>
       {title}
       <span
         className={`h-[1px] inline-block w-0  bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
