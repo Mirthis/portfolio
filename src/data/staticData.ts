@@ -165,7 +165,7 @@ export const projectsData = {
 
 export const aboutStats: Array<{ stat: number; description: string }> = [
   {
-    stat: 20,
+    stat: 10,
     description: "Satisfied clients",
   },
   {

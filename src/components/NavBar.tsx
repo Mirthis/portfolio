@@ -42,7 +42,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    path: "https://www.linkedin.com/in/andrea-cardinale-fullstack",
+    path: "https://www.linkedin.com/in/andreacardinale-fse",
     Icon: LinkedInIcon,
   },
 ];

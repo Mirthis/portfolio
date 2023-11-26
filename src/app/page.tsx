@@ -41,8 +41,8 @@ export default function Home() {
               <p className="my-4 font-medium md:text-sm sm:text-xs">
                 I am dedicated to turning ideas into innovative and modern web
                 applications. Learn more about my full-stack development
-                experience and how I can help make your digital dreams come
-                tryue by exploring my bio and latest projects.
+                experience and how I can help make your digital visions come
+                true by exploring my bio and latest projects.
                 {/* My mission is to transform your digital ideas into reality with
                 precision and expertise. Explore my latest web development
                 projects, showcasing a diverse range of skills and innovative
@@ -50,7 +50,7 @@ export default function Home() {
               </p>
               <div className="flex space-x-4 items-center mt-2 self-start lg:self-center">
                 <Link
-                  href="/resume/resume.pdf"
+                  href="/resume/Andrea Cardinale - Full Stack Engineer Resume.pdf"
                   target="_blank"
                   className="flex md:p-2 md:px-4 md:text-base items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark hover:dark:bg-dark hover:dark:text-light transition-all  border-transparent hover:border-dark hover:dark:border-light border-2"
                 >

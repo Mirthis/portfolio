@@ -34,26 +34,26 @@ const AboutPage = () => {
               </h2>
               <div className="font-medium space-y-4">
                 <p>
-                  Hi, I&apos;m Andrea, I&apos;m a full-stack web developer and
+                  Hi, I&apos;m Andrea, I&apos;m a full-stack web engineer and
                   I&apos;m passionate about technology, coding and building
-                  modern and innovation applications.
+                  modern and innovative applications.
                 </p>
                 <p>
                   I built my first website in the web 1.0 era but life led me
                   down a less technical path. Despite that, my passion for
                   coding persisted, drawing me back to web development time and
                   again. Now, I&apos;ve decided to transform this enjoyable
-                  pastime into a profession that truly ignites my enthusiasm.
+                  passtime into a profession that truly ignites my enthusiasm.
                 </p>
                 <p>
-                  When I work a new project, I always try to bring a fresh and
-                  innovative approach to the table, and I am always looking for
-                  new and better ways to solve problems and create intuitive,
-                  enjoyable experiences for users.
+                  When I work on a new project, I always try to bring a fresh
+                  and innovative approach to the table, and I am always looking
+                  for new and better ways to solve problems and create
+                  intuitive, enjoyable experiences for users.
                 </p>
                 <p>
-                  I look forward to the opportunity to bring my skills and
-                  passion to your next project.
+                  I look forward to the opportunity to bring my skills,
+                  expertise and passion to your next project.
                 </p>
               </div>
             </div>
