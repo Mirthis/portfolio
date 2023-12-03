@@ -12,10 +12,10 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="ml-3 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark"
+      className="ml-5 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark"
     >
-      <SunIcon className="fill-dark block dark:hidden" />
-      <MoonIcon className="fill-dark hidden dark:block" />
+      <SunIcon className="fill-dark block dark:hidden w-7 h-7" />
+      <MoonIcon className="fill-dark hidden dark:block w-7 h-7" />
     </button>
   );
 };

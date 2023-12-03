@@ -13,14 +13,14 @@ import {
 export const experiences = [
   {
     position: "Full Stack Engineer",
-    company: "simpledayplanner.com",
+    company: "Simple Day Planner",
     companyLink: "https://simpledayplanner.com",
     time: "2023-Present",
     work: "Ideated, designed and built the Simple Day Planner app including front-end and back-end",
   },
   {
     position: "Full Stack Engineer",
-    company: "snartapply.app",
+    company: "Smart Apply",
     companyLink: "https://snartapply.app",
     time: "2023-Present",
     address: "Mountain View, CA",

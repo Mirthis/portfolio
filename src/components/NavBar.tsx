@@ -93,11 +93,16 @@ const NavBar = () => {
 
           <nav className="flex justify-center items-center flex-wrap space-x-6">
             {socialLinks.map((link, index) => (
-              <IconLink key={index} href={link.path} Icon={link.Icon} />
+              <IconLink
+                key={index}
+                href={link.path}
+                Icon={link.Icon}
+                className="w-6 h-6"
+              />
             ))}
             <ContactTrigger>
-              <button className="hover:cursor-pointer">
-                <EmailIcon className="text-red-500 w-10" />
+              <button className="hover:cursor-pointer  flex items-center justify-center">
+                <EmailIcon className="text-red-500 w-6 h-6" />
               </button>
             </ContactTrigger>
             <ThemeSwitcher />
@@ -108,7 +113,7 @@ const NavBar = () => {
           <motion.div
             initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
             animate={{ scale: 1, opacity: 1 }}
-            className="min-w-[70vw] space-y-2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 z-30  flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="min-w-[70vw] space-y-8 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 z-30  flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             <nav className="space-y-4 flex items-center flex-col justify-center">
               {navLinks.map((link, index) => (
@@ -121,13 +126,18 @@ const NavBar = () => {
               ))}
             </nav>
 
-            <nav className="flex justify-center items-center dark:text-dark text-light flex-wrap space-x-6 sm:space-x-2">
+            <nav className="flex justify-center items-center dark:text-dark text-light flex-wrap gap-x-6 sm:gap-x-2">
               {socialLinks.map((link, index) => (
-                <IconLink key={index} href={link.path} Icon={link.Icon} />
+                <IconLink
+                  key={index}
+                  href={link.path}
+                  Icon={link.Icon}
+                  className="w-8 h-8"
+                />
               ))}
               <ContactTrigger>
-                <button className="hover:cursor-pointer">
-                  <EmailIcon className="text-red-500 w-10" />
+                <button className="hover:cursor-pointer flex items-center justify-center">
+                  <EmailIcon className="text-red-500 w-8 h-8" />
                 </button>
               </ContactTrigger>
               <ThemeSwitcher />
