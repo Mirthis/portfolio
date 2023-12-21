@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import ContactTrigger from "./ContactTrigger";
 import Container from "./Container";
 
 const Footer = () => {
@@ -20,13 +21,9 @@ const Footer = () => {
             Andrea Cardinale
           </Link>
         </div>
-        <Link
-          href="/contact"
-          target="_blank"
-          className="underline underline-offset-2"
-        >
-          Say Hello
-        </Link>
+        <ContactTrigger>
+          <button className="underline underline-offset-2">Say Hello</button>
+        </ContactTrigger>
       </Container>
     </footer>
   );

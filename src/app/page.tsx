@@ -38,7 +38,7 @@ export default function Home() {
                 text="Seamless Solutions, Infinite Possibilities"
                 className="text-6xl text-left xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
-              <p className="my-4 font-medium md:text-sm sm:text-xs">
+              <p className="my-4 font-medium sm:text-sm">
                 I am dedicated to turning ideas into innovative and modern web
                 applications. Learn more about my full-stack development
                 experience and how I can help make your digital visions come

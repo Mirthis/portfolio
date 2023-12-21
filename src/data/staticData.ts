@@ -92,7 +92,7 @@ export const projectsData = {
   coverletterai: {
     id: "coverletterai",
     image: "coverLettersAi.jpg",
-    title: "Cover Letters AIy",
+    title: "Cover Letter AI",
     summary:
       "Simple application to generate cover letters based on a user profile and a job description. Powered by OpenAI's GPT-3 API.",
     type: "Full-stack",

@@ -136,7 +136,10 @@ const NavBar = () => {
                 />
               ))}
               <ContactTrigger>
-                <button className="hover:cursor-pointer flex items-center justify-center">
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="hover:cursor-pointer flex items-center justify-center"
+                >
                   <EmailIcon className="text-red-500 w-8 h-8" />
                 </button>
               </ContactTrigger>
