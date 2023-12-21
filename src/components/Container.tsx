@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import clsx from "clsx";
 
 const Container = ({
@@ -10,7 +11,7 @@ const Container = ({
   return (
     // TODO: limite width instead of using big padding
     <div
-      className={clsx([
+      className={cn([
         "w-full h-full inline-block z-0 p-32 lg:p-16 xl:p-24 md:p-12 sm:p-8",
         className,
       ])}

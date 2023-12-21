@@ -6,11 +6,11 @@ import Container from "./Container";
 const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark dark:text-light dark:border-light font-medium text-lg sm:text-base">
-      <Container className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
+      <Container className="py-6 xl:py-6 lg:py-6 md:py-6 sm:py-6 flex items-center justify-between lg:flex-col">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex  items-center lg:py-2">
           Build with{" "}
-          <span className="text-primary dark:text-primaryDark text-2xl px-1">
+          <span className="text-primary dark:text-primaryDark text-2xl lg:text-lg px-1">
             &#9825;
           </span>{" "}
           by&nbsp;
