@@ -26,7 +26,7 @@ export default function RootLayout({
       <GoogleAnalyticsWrapper />
 
       <body
-        className={`${montserrat.variable} font-mont text-dark dark:text-light bg-light dark:bg-dark`}
+        className={`${montserrat.variable} font-mont text-dark dark:text-light bg-gradient-to-bl dark:from-slate-950 dark:to-purple-950 dark:via-violet-950 from-slate-200 to-purple-300 via-violet-200`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />

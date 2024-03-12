@@ -57,12 +57,12 @@ const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-2">
+              {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" /> */}
               <Image
                 alt="Andrea Cardainele"
                 src={profilePicture}
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-xl border-2 dark:border-light border-dark"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-wdith: 1280px) 50vw, 33vw"
               />

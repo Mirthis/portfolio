@@ -15,9 +15,11 @@ const config: Config = {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
-        dark: "#121212",
-        light: "#f5f5f5",
-        primary: "#16a34a", // 240,86,199
+        // dark: "#121212",
+        // light: "#f5f5f5",
+        dark: "#3b0764",
+        light: "#f3e8ff",
+        primary: "#e11d48", // 240,86,199
         primaryDark: "#eab308", // 80,230,217
       },
       animation: {
@@ -27,28 +29,28 @@ const config: Config = {
       },
       backgroundImage: {
         circularLight:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
+          "repeating-radial-gradient(rgba(59,7,100,0.5) 2px,rgba(255,255,255,0.2) 5px,rgba(255,255,255,0.2) 100px)",
 
         circularDark:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#121212 8px,#121212 100px)",
+          "repeating-radial-gradient(rgba(243,232,255,0.5) 2px,rgba(255,255,255,0.02) 8px,rgba(255,255,255,0.02)  100px)",
 
         circularLightLg:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
+          "repeating-radial-gradient(rgba(59,7,100,0.5)  2px,rgba(255,255,255,0.2) 5px,rgba(255,255,255,0.2) 80px)",
 
         circularDarkLg:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#121212 8px,#121212 80px)",
+          "repeating-radial-gradient(rgba(243,232,255,0.5) 2px,rgba(255,255,255,0.02) 8px,rgba(255,255,255,0.02) 80px)",
 
         circularLightMd:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
+          "repeating-radial-gradient(rgba(59,7,100,0.5)  2px,rgba(255,255,255,0.2) 5px,rgba(255,255,255,0.2) 60px)",
 
         circularDarkMd:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#121212 6px,#121212 60px)",
+          "repeating-radial-gradient(rgba(243,232,255,0.5) 2px,rgba(255,255,255,0.02) 6px,rgba(255,255,255,0.02) 60px)",
 
         circularLightSm:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
+          "repeating-radial-gradient(rgba(59,7,100,0.5)  2px,rgba(255,255,255,0.2) 5px,rgba(255,255,255,0.2) 40px)",
 
         circularDarkSm:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#121212 4px,#121212 40px)",
+          "repeating-radial-gradient(rgba(243,232,255,0.5) 2px,rgba(255,255,255,0.02) 4px,rgba(255,255,255,0.02) 40px)",
       },
       keyframes: {
         overlayShow: {
@@ -84,6 +86,6 @@ const config: Config = {
       // => @media (max-width: 479px) { ... }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

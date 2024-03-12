@@ -69,7 +69,7 @@ const ContactForm = () => {
                 Name
               </label>
               <input
-                className="  inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none"
+                className="dark:bg-light/30 bg-dark/30 focus:bg-dark/50 focus:dark:bg-light/50 focus:outline-solid focus:dark:outline-light focus:outline-dark inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none"
                 {...register("name")}
               />
             </div>
@@ -86,7 +86,7 @@ const ContactForm = () => {
                 Email
               </label>
               <input
-                className=" inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none "
+                className="dark:bg-light/30 bg-dark/30 focus:bg-dark/50 focus:dark:bg-light/50 focus:outline-solid focus:dark:outline-light focus:outline-dark inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none"
                 {...register("email")}
               />
             </div>
@@ -103,7 +103,7 @@ const ContactForm = () => {
                 Subject
               </label>
               <input
-                className=" inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none "
+                className="dark:bg-light/30 bg-dark/30 focus:bg-dark/50 focus:dark:bg-light/50 focus:outline-solid focus:dark:outline-light focus:outline-dark inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-2 leading-none"
                 {...register("subject")}
               />
             </div>
@@ -121,7 +121,7 @@ const ContactForm = () => {
               </label>
               <textarea
                 rows={5}
-                className=" inline-flex w-full flex-1  rounded-[4px] px-2 py-2  leading-none  "
+                className="dark:bg-light/30 bg-dark/30 focus:bg-dark/50 focus:dark:bg-light/50 focus:outline-solid focus:dark:outline-light focus:outline-dark  inline-flex w-full flex-1  rounded-[4px] px-2 py-2  leading-none"
                 {...register("message")}
               />
             </div>

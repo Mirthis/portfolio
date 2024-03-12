@@ -23,7 +23,7 @@ const EducationItem = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex  flex-col items-left justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div

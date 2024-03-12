@@ -18,7 +18,7 @@ const ExperienceItem = ({
 }: {
   position: string;
   company: string;
-  companyLink: string;
+  companyLink?: string;
   time: string;
   address?: string;
   work: string;
@@ -36,17 +36,22 @@ const ExperienceItem = ({
         transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {position}&nbsp;
+          {position}
+          <span className="text-primary dark:text-primaryDark">
+            &nbsp;@&nbsp;
+          </span>
           {companyLink ? (
             <Link
               href={companyLink}
               target="_blank"
-              className="text-primary dark:text-primaryDark normal-case"
+              className="text-primary dark:text-primaryDark normal-case underline underline-offset-4 hover:text-primary/85 dark:hover:text-primaryDark/85 transition-colors duration-300 ease-in-out"
             >
-              @{company}
+              {company}
             </Link>
           ) : (
-            `@${company}`
+            <span className="text-primary dark:text-primaryDark normal-case">
+              {company}
+            </span>
           )}
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">

@@ -9,7 +9,7 @@ const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
       initial={{ x: 0, y: 0 }}
       whileInView={{ x, y, transition: { duration: 1.5 } }}
       viewport={{ once: true }}
-      className="cursor-pointer gap-x-1 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold absolute  flex lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 items-center justify-center rounded-full font-semibold bg-dark text-light dark:text-dark dark:bg-light py-3 px-6 shadow-dark"
+      className="cursor-default gap-x-1 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold absolute  flex lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 items-center justify-center rounded-full font-semibold bg-dark text-light dark:text-dark dark:bg-light py-3 px-6 shadow-dark"
     >
       {/* <Icon icon={reactIcon} className="w-6 h-6" /> */}
       {name}
@@ -29,7 +29,7 @@ const Skills = () => {
       >
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="cursor-pointer flex lg:p-6 md:p-4 xs:text-xs xs:p-2 items-center justify-center rounded-full font-semibold bg-dark text-light dark:text-dark dark:bg-light  p-8 shadow-dark"
+          className="cursor-default flex lg:p-6 md:p-4 xs:text-xs xs:p-2 items-center justify-center rounded-full font-semibold bg-dark text-light dark:text-dark dark:bg-light  p-8 shadow-dark"
         >
           Web
         </motion.div>

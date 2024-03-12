@@ -29,13 +29,24 @@ export const experiences = [
   {
     position: "Full Stack Engineer",
     company: "The Lily Pad",
-    companyLink: "https://discord.gg/azz3ccJH",
+    // companyLink: "https://discord.gg/azz3ccJH",
     time: "2022-2023",
-    work: "Worked on a team of five to build a web3 learning portal with proof of knowledge NFTs. I was responsible for the front-end and back-end development and integration with smart contracts.",
+    work: "Part of a team of five building a web3 learning portal with proof of knowledge NFTs. I was responsible for the front-end and back-end development and integration with smart contracts.",
+  },
+  {
+    position: "Data and AI Delivery Lead",
+    company: "Accenture",
+    companyLink: "https://www.accenture.com",
+    time: "2007-2023",
+    work: "Implemented data and AI solution for major corporations, taking part in the design, engineering and management of the projects.",
   },
 ];
 
 export const educations = [
+  {
+    type: "Full Stack Open",
+    place: "University of Helsinki, Finland",
+  },
   {
     type: "Master Degree in Computer Science",
     place: "Università degli studi di Milano, Milan, Italy",
@@ -165,7 +176,7 @@ export const projectsData = {
 
 export const aboutStats: Array<{ stat: number; description: string }> = [
   {
-    stat: 10,
+    stat: 5,
     description: "Satisfied clients",
   },
   {

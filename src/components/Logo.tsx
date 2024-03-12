@@ -12,17 +12,16 @@ const Logo = () => {
       {/* TODO: Change colors or complete animation */}
       <MotionLink
         href="/"
-        className="w-16 h-16 bg-dark dark:border-light border border-solid border-transparent text-light flex items-center justify-center rounded-full text-2xl font-bold"
+        className="w-16 h-16 bg-purple-950 dark:border-light border border-solid border-transparent text-light flex items-center justify-center rounded-full text-2xl font-bold"
         whileHover={{
           backgroundColor: [
-            "#121212",
-            "rgba(131,58,180,1)",
-            "rgba(253,29,29,1)",
-            "rgba(252,176,69,1)",
-            "rgba(131,58,180,1)",
-            "#121212",
+            "#3b0764", // purple-950
+            "#6b21a8", // purple-800
+            "#2e1065", // violet-950,
+            "#5b21b6", // violet-800,
+            "#3b0764", // purple-950
           ],
-          transition: { duration: 1.5, repeat: Infinity },
+          transition: { duration: 4, repeat: Infinity },
         }}
       >
         AC
