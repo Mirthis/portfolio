@@ -20,7 +20,6 @@ const AboutPage = () => {
     <>
       <TransitionEffect />
       <main className="flex flex-col items-center justify-center w-full mb-16">
-        {/* TODO: Review purpose and use of container */}
         <Container className="pt-16">
           {/* TODO: Update text and image */}
           <AnimatedText
@@ -57,12 +56,12 @@ const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-2">
+            <div className="col-span-3 xl:col-span-4 md:col-span-8 md:order-1 relative h-max rounded-2xl bg-dark/20 dark:bg-light/20 p-2">
               {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" /> */}
               <Image
                 alt="Andrea Cardainele"
                 src={profilePicture}
-                className="w-full h-auto rounded-xl border-2 dark:border-light border-dark"
+                className="w-full h-auto rounded-xl"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-wdith: 1280px) 50vw, 33vw"
               />

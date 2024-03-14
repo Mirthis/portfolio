@@ -1,3 +1,4 @@
+import { projectsData } from "@/data/staticData";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -29,7 +30,7 @@ export const getMetaKeywords = () => {
     "CSS",
     "React",
     "Redux",
-    "Next.js",
+    "Next.JS",
     "JavaScript",
     "TypeScript",
     "Node.js",
@@ -84,4 +85,10 @@ export const getPageMetadata = (title?: string, description?: string) => {
     description: getMetaDescription(description),
     keywords: getMetaKeywords(),
   };
+};
+
+export const getProjectData = (slug: string) => {
+  const project = projectsData[slug];
+  if (!project) throw new Error("Project doesn't exist");
+  return project;
 };

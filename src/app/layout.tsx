@@ -1,3 +1,4 @@
+import ContactDialog from "@/components/ContactDialog";
 import Footer from "@/components/Footer";
 import GoogleAnalyticsWrapper from "@/components/GoogleAnalyticsWrapper";
 import NavBar from "@/components/NavBar";
@@ -26,9 +27,10 @@ export default function RootLayout({
       <GoogleAnalyticsWrapper />
 
       <body
-        className={`${montserrat.variable} font-mont text-dark dark:text-light bg-gradient-to-bl dark:from-slate-950 dark:to-purple-950 dark:via-violet-950 from-slate-200 to-purple-300 via-violet-200`}
+        className={`${montserrat.variable} font-mont text-dark dark:text-light bg-fixed bg-gradient-to-bl dark:from-slate-950 dark:to-purple-950 dark:via-violet-950 from-slate-200 to-purple-300 via-violet-200`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ContactDialog />
           <NavBar />
           {children}
           <Footer />

@@ -66,8 +66,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <HireMe />
         </Container>
-        <HireMe />
         {/* TODO: Remove or replace this image */}
         {/* <div className="absolute right-8 bottom-8 inline-block w-24">
         <Image

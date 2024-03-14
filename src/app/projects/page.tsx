@@ -33,19 +33,13 @@ const ProjectsPage = () => {
               <Project {...projectsData["coverletterai"]} />
             </div>
             <div className="col-span-6 sm:col-span-12 ">
-              <Project {...projectsData["portfolioV2"]} />
+              <Project {...projectsData["portfolio"]} />
             </div>
             <div className="col-span-6 sm:col-span-12 ">
               <Project {...projectsData["perfi"]} />
             </div>
-            <div className="col-span-6 sm:col-span-12 ">
-              <Project {...projectsData["portfolioV1"]} />
-            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project {...projectsData["poknft"]} />
-            </div>
-            <div className="col-span-6 sm:col-span-12 ">
-              <Project {...projectsData["cryptoverse"]} />
             </div>
           </div>
         </Container>

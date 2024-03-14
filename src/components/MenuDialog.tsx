@@ -9,7 +9,7 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import ContactForm from "./ContactForm";
 import { XIcon } from "./Icons";
 
-const ContactDialog = () => {
+const MenuDialog = () => {
   const [open, setOpen] = useAtom(showContactModal);
 
   //  TODO: Opening the dialog shift
@@ -41,4 +41,4 @@ const ContactDialog = () => {
   );
 };
 
-export default ContactDialog;
+export default MenuDialog;

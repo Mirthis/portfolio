@@ -10,6 +10,8 @@ import {
   TypeScriptIcon,
 } from "@/components/Icons";
 
+import portfolioDescription from "./projects/portfolio";
+
 export const experiences = [
   {
     position: "Full Stack Engineer",
@@ -55,7 +57,7 @@ export const educations = [
 
 export const techIcons = {
   React: ReactIcon,
-  "Next.js": NextIcon,
+  "Next.JS": NextIcon,
   TypeScript: TypeScriptIcon,
   "Tailwind CSS": TailwindIcon,
   Framer: FramerIcon,
@@ -65,17 +67,32 @@ export const techIcons = {
   "Express.js": ExpressIcon,
 };
 
-export const projectsData = {
+type Project = {
+  id: string;
+  image: string;
+  title: string;
+  summary: string;
+  description: string;
+  quickStart?: string;
+  type: string;
+  url: string;
+  githubUrl?: string;
+  techs: string[];
+};
+
+export const projectsData: { [id: string]: Project } = {
   simpledayplanner: {
     id: "simpledayplanner",
     image: "simpledayplanner.jpg",
     title: "Simple Day Planner",
+    description:
+      "Not a to-do list, not a calendar, but a simple way to plan your day at a glance.",
     summary:
       "Not a to-do list, not a calendar, but a simple way to plan your day at a glance.",
     type: "Full-stack",
     url: "https://www.simpledayplanner.com/",
     techs: [
-      "Next.js",
+      "Next.JS",
       "React",
       "TypeScript",
       "Tailwind CSS",
@@ -89,10 +106,11 @@ export const projectsData = {
     title: "Smart Apply",
     summary:
       "AI powered tools to help with job applications: personalized cover letters, interview simulation and multiple choice questions to help you land your dream job.",
+    description: "AI powered tools to help with job applications.",
     type: "Full-stack",
     url: "https://www.smartapply.app/",
     techs: [
-      "Next.js",
+      "Next.JS",
       "React",
       "TypeScript",
       "Tailwind CSS",
@@ -104,13 +122,15 @@ export const projectsData = {
     id: "coverletterai",
     image: "coverLettersAi.jpg",
     title: "Cover Letters AIy",
+    description:
+      "Simple application to generate cover letters based on a user profile and a job description. Powered by OpenAI's GPT-3 API.",
     summary:
       "Simple application to generate cover letters based on a user profile and a job description. Powered by OpenAI's GPT-3 API.",
     type: "Full-stack",
     url: "https://coverletterai.vercel.app/",
     githubUrl: "https://github.com/Mirthis/coverletterai",
     techs: [
-      "Next.js",
+      "Next.JS",
       "React",
       "TypeScript",
       "Tailwind CSS",
@@ -122,6 +142,8 @@ export const projectsData = {
     id: "perfi",
     image: "perfi.jpg",
     title: "Perfi",
+    description:
+      "Perfi is a personal finance app that leverage open banking to retrieve transactions data from financial institution accounts, and provide spending stats.",
     summary:
       "Perfi is a personal finance app that leverage open banking to retrieve transactions data from financial institution accounts, and provide spending stats.",
     type: "Full-stack",
@@ -133,44 +155,26 @@ export const projectsData = {
     id: "pok",
     image: "pok.jpg",
     title: "PoK NFT Viewer",
+    description:
+      "This simple web app allows to browse Proof of Knowlege NFTs and display the one owned by the user based on their wallet address.",
     summary:
       "This simple web app allows to browse Proof of Knowlege NFTs and display the one owned by the user based on their wallet address.",
     type: "Front-end / Web3",
     url: "https://pok-nfts.vercel.app/",
     githubUrl: "https://github.com/Mirthis/pok-nfts",
-    techs: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    techs: ["Next.JS", "React", "TypeScript", "Tailwind CSS"],
   },
-  cryptoverse: {
-    id: "cryptoverse",
-    image: "cryptoverse.jpg",
-    title: "Cryptoverse",
-    summary:
-      "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
-    type: "Front-end",
-    url: "https://cryptoverse-mirthis.netlify.app/",
-    githubUrl: "https://github.com/Mirthis/cryptoverse-webapp",
-    techs: ["React"],
-  },
-  portfolioV1: {
-    id: "portfolioV1",
-    image: "portfolio-v1.jpg",
-    title: "Portfolio v1",
-    summary:
-      "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
-    type: "Front-end",
-    url: "https://portfolio-v1-six-rose.vercel.app/",
-    githubUrl: "https://github.com/Mirthis/portfolio-v1",
-    techs: ["Next.js", "React", "Tailwind CSS"],
-  },
-  portfolioV2: {
-    id: "portfolioV2",
+  portfolio: {
+    id: "portfolio",
     image: "portfolio-v2.jpg",
-    title: "Portfolio v2",
+    title: "Portfolio",
     summary: "This is the site you're currently browsing :)",
+    description: portfolioDescription,
+    quickStart: "# Hi, *Pluto*! `ddd`",
     type: "Front-end",
     url: "https://www.andreacardinale.me/",
     githubUrl: "https://github.com/Mirthis/portfolio",
-    techs: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer"],
+    techs: ["Next.JS", "React", "TypeScript", "Tailwind CSS", "Framer"],
   },
 };
 

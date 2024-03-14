@@ -16,7 +16,7 @@ const Project = ({
   title: string;
   image: string;
   url: string;
-  githubUrl: string;
+  githubUrl?: string;
   techs: string[];
 }) => {
   return (
@@ -66,9 +66,11 @@ const Project = ({
           >
             Visit
           </Link>
-          <Link href={githubUrl} target="_blank" className="w-8 md:w-6">
-            <GithubIcon />
-          </Link>
+          {githubUrl && (
+            <Link href={githubUrl} target="_blank" className="w-8 md:w-6">
+              <GithubIcon />
+            </Link>
+          )}
         </div>
       </div>
     </article>
