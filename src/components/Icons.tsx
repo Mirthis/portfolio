@@ -794,8 +794,8 @@ export const T3 = ({ className, ...rest }: SVGProps<SVGSVGElement>) => (
     {...rest}
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M165.735 25.0701L188.947 0.972412H0.465994V25.0701H165.735Z"
       fill="currentColor"
     />
@@ -808,8 +808,8 @@ export const T3 = ({ className, ...rest }: SVGProps<SVGSVGElement>) => (
       fill="currentColor"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M88.2625 192.669L88.2626 45.6459H64.1648L64.1648 192.669H88.2625Z"
       fill="currentColor"
     />
