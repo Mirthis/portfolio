@@ -38,7 +38,14 @@ export default function Home() {
                 className="text-6xl text-left xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
               <p className="my-4 font-medium md:text-sm sm:text-xs">
-                {homeData.heroText}
+                I am dedicated to turning ideas into innovative and modern web
+                applications. Learn more about my full-stack development
+                experience and how I can help make your digital visions come
+                true by exploring my bio and latest projects.
+                {/* My mission is to transform your digital ideas into reality with
+                precision and expertise. Explore my latest web development
+                projects, showcasing a diverse range of skills and innovative
+                solutions. */}
               </p>
               <div className="flex space-x-4 items-center mt-2 self-start lg:self-center">
                 <Link
