@@ -24,7 +24,9 @@ const Footer = () => {
           </Link>
         </div>
         <ContactTrigger>
-          <p className="underline underline-offset-2">Say Hello</p>
+          <p className="underline underline-offset-2 cursor-pointer">
+            Say Hello
+          </p>
         </ContactTrigger>
       </Container>
     </footer>
