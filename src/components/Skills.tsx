@@ -1,6 +1,20 @@
 "use client";
 
+import { aboutData } from "@/data/about";
 import { motion } from "framer-motion";
+
+const skillPosition = [
+  { x: "-24vw", y: "-2vw" },
+  { x: "-5vw", y: "-10vw" },
+  { x: "15vw", y: "8vw" },
+  { x: "5vw", y: "18vw" },
+  { x: "20vw", y: "-8vw" },
+  { x: "-20vw", y: "-17vw" },
+  { x: "7vw", y: "-20vw" },
+  { x: "-14vw", y: "14vw" },
+  { x: "-10vw", y: "6vw" },
+  { x: "9vw", y: "-5vw" },
+];
 
 const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
   return (
@@ -33,17 +47,14 @@ const Skills = () => {
         >
           Web
         </motion.div>
-
-        <Skill name="NextJS" x="-24vw" y="-2vw" />
-        <Skill name="React" x="-5vw" y="-10vw" />
-        <Skill name="Tailwind CSS" x="15vw" y="8vw" />
-        <Skill name="NodeJS" x="5vw" y="18vw" />
-        <Skill name="SQL" x="20vw" y="-8vw" />
-        <Skill name="ExpressJS" x="-20vw" y="-17vw" />
-        <Skill name="T3 Stack" x="7vw" y="-20vw" />
-        <Skill name="GraphQL" x="-14vw" y="14vw" />
-        <Skill name="HTML" x="-10vw" y="6vw" />
-        <Skill name="CSS" x="9vw" y="-5vw" />
+        {aboutData.skills.map((skill, index) => (
+          <Skill
+            key={skill}
+            name={skill}
+            x={skillPosition[index].x}
+            y={skillPosition[index].y}
+          />
+        ))}
       </div>
     </>
   );

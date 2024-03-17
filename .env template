@@ -1,11 +1,14 @@
-# SMPT for contact form
+# SMPT for contact form https://resend.com/
 EMAIL_SENDER=
 EMAIL_RECIPIENT=
 RESEND_API_KEY=
 
-# recaptcha
+# recaptcha - https://www.google.com/recaptcha/about/
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
 RECAPTCHA_SECRET_KEY=
 
-# google analytics
+# google analytics - https://analytics.google.com/
 NEXT_PUBLIC_GA_MEASUREMENT_ID="G-XXXXXXXXXX"
+
+# URL to resume
+NEXT_PUBLIC_RESUME_URL="https://www.example.com/resume.pdf"

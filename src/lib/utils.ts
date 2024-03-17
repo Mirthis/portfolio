@@ -1,4 +1,4 @@
-import { projectsData } from "@/data/staticData";
+import { projectsData } from "@/data/projects";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -87,8 +87,8 @@ export const getPageMetadata = (title?: string, description?: string) => {
   };
 };
 
-export const getProjectData = (slug: string) => {
-  const project = projectsData[slug];
+export const getProjectData = (id: string) => {
+  const project = projectsData.find((project) => project.id === id);
   if (!project) throw new Error("Project doesn't exist");
   return project;
 };

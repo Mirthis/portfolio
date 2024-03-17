@@ -5,16 +5,20 @@ import { GithubIcon } from "./Icons";
 import TechIcon from "./TechIcon";
 
 const Project = ({
+  id,
   type,
   title,
-  image,
+  coverImage,
+  images,
   url,
   githubUrl,
   techs,
 }: {
+  id: string;
   type: string;
   title: string;
-  image: string;
+  coverImage: string;
+  images?: string[];
   url: string;
   githubUrl?: string;
   techs: string[];
@@ -24,12 +28,11 @@ const Project = ({
       <div className="absolute top-0 -right-3 md:-right-2 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem] -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl " />
 
       <Link
-        href={url}
-        target="_blank"
+        href={`projects/${id}`}
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <Image
-          src={`/images/projects/${image}`}
+          src={`/images/projects/${id}/${coverImage}`}
           alt={title}
           className="w-full h-auto"
           width={1280}
@@ -37,11 +40,11 @@ const Project = ({
         />
       </Link>
       <div className="w-full flex flex-col space-y-2 items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl lg:text-lg md:text-base">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
           {type}
         </span>
         <Link
-          href={url}
+          href={`projects/${id}`}
           target="_blank"
           className="hover:undeline underline-offset-2"
         >

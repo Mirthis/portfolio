@@ -12,18 +12,22 @@ import {
 import TechIcon from "./TechIcon";
 
 const FeaturedProject = ({
+  id,
   type,
   title,
-  summary,
-  image,
+  tagline,
+  coverImage,
+  images,
   url,
   githubUrl,
   techs,
 }: {
+  id: string;
   type: string;
   title: string;
-  summary: string;
-  image: string;
+  tagline: string;
+  coverImage: string;
+  images?: string[];
   url: string;
   githubUrl?: string;
   techs: string[];
@@ -33,12 +37,11 @@ const FeaturedProject = ({
       <div className="absolute top-0 -right-3 xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light   rounded-br-3xl  " />
 
       <Link
-        href={url}
-        target="_blank"
+        href={`projects/${id}`}
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image
-          src={`/images/projects/${image}`}
+          src={`/images/projects/${id}/${coverImage}`}
           alt={title}
           className="w-full h-auto"
           width={1280}
@@ -52,7 +55,7 @@ const FeaturedProject = ({
           {type}
         </span>
         <Link
-          href={url}
+          href={`projects/${id}`}
           target="_blank"
           className="hover:undeline underline-offset-2"
         >
@@ -69,7 +72,7 @@ const FeaturedProject = ({
             />
           ))}
         </div>
-        <p className="font-medium sm:text-sm">{summary}</p>
+        <p className="font-medium sm:text-sm">{tagline}</p>
         <div className=" flex items-center space-x-4">
           {githubUrl && (
             <Link href={githubUrl} target="_blank" className="w-10">

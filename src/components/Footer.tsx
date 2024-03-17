@@ -1,3 +1,5 @@
+import { homeData } from "@/data/home";
+
 import Link from "next/link";
 
 import ContactTrigger from "./ContactTrigger";
@@ -6,10 +8,10 @@ import Container from "./Container";
 const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark dark:text-light dark:border-light font-medium text-lg sm:text-base">
-      <Container className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
+      <Container className="py-8 flex items-center justify-between lg:flex-col xl:py-8 lg:py-6">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex  items-center lg:py-2">
-          Build with{" "}
+          Built with{" "}
           <span className="text-primary dark:text-primaryDark text-2xl px-1">
             &#9825;
           </span>{" "}
@@ -18,7 +20,7 @@ const Footer = () => {
             href="http://www.andreacardinale.me"
             className="underline underline-offset-2"
           >
-            Andrea Cardinale
+            {homeData.authorName}
           </Link>
         </div>
         <ContactTrigger>

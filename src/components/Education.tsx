@@ -1,6 +1,6 @@
 "use client";
 
-import { educations, experiences } from "@/data/staticData";
+import { aboutData } from "@/data/about";
 import { motion, useScroll } from "framer-motion";
 
 import { useRef } from "react";
@@ -24,7 +24,7 @@ const Education = () => {
           className="absolute top-2 left-9 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          {educations.map((item) => (
+          {aboutData.educations.map((item) => (
             <EducationItem key={item.type} {...item} />
           ))}
         </ul>

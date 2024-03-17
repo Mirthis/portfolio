@@ -6,6 +6,7 @@ import Container from "@/components/Container";
 import HireMe from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
+import { homeData } from "@/data/home";
 import { getPageMetadata, getPageTitle } from "@/lib/utils";
 
 import { Metadata } from "next";
@@ -19,11 +20,9 @@ export const metadata: Metadata = getPageMetadata("Home");
 export default function Home() {
   return (
     <>
-      <TransitionEffect />
       <main className="flex items-center w-full min-h-screen">
         <Container className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            {/* TODO: Replace with a real image */}
             <div className="w-1/2 md:w-full">
               <Image
                 alt="Andrea Cardinale"
@@ -35,23 +34,15 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Seamless Solutions, Infinite Possibilities"
-                // text="Transforming Ideas into Digital Realities"
+                text={homeData.heroTitle}
                 className="text-6xl text-left xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl"
               />
               <p className="my-4 font-medium md:text-sm sm:text-xs">
-                I am dedicated to turning ideas into innovative and modern web
-                applications. Learn more about my full-stack development
-                experience and how I can help make your digital visions come
-                true by exploring my bio and latest projects.
-                {/* My mission is to transform your digital ideas into reality with
-                precision and expertise. Explore my latest web development
-                projects, showcasing a diverse range of skills and innovative
-                solutions. */}
+                {homeData.heroText}
               </p>
               <div className="flex space-x-4 items-center mt-2 self-start lg:self-center">
                 <Link
-                  href="/resume/Andrea Cardinale - Full Stack Engineer Resume.pdf"
+                  href={process.env.NEXT_PUBLIC_RESUME_URL ?? "/"}
                   target="_blank"
                   className="flex md:p-2 md:px-4 md:text-base items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark hover:dark:bg-dark hover:dark:text-light transition-all  border-transparent hover:border-dark hover:dark:border-light border-2"
                 >
@@ -68,14 +59,6 @@ export default function Home() {
           </div>
           <HireMe />
         </Container>
-        {/* TODO: Remove or replace this image */}
-        {/* <div className="absolute right-8 bottom-8 inline-block w-24">
-        <Image
-          src={ligthbulb}
-          alt="Andrea Cardinale"
-          className="w-full h-auto md:hidden"
-        />
-      </div> */}
       </main>
     </>
   );

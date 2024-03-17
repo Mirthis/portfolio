@@ -32,7 +32,7 @@ const Ticker = (props: TickerProps) => {
   };
   const {
     children,
-    duration = 5,
+    duration = 10,
     onMouseEnter = defaultOnMouseEnter,
     onMouseLeave = defaultOnMouseLeave,
     isPlaying = true,

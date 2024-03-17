@@ -1,5 +1,6 @@
 "use client";
 
+import { homeData } from "@/data/home";
 import { showContactModal } from "@/lib/state";
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
@@ -38,12 +39,12 @@ const navLinks = [
 const socialLinks = [
   {
     name: "Github",
-    path: "https://github.com/Mirthis",
+    path: homeData.githubUrl,
     Icon: GithubIcon,
   },
   {
     name: "LinkedIn",
-    path: "https://www.linkedin.com/in/andreacardinale-fse",
+    path: homeData.linkedinUrl,
     Icon: LinkedInIcon,
   },
 ];

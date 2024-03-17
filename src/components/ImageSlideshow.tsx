@@ -67,12 +67,11 @@ export const ImageSlideShow = ({ images }: { images: string[] }) => {
   }, [paginate]);
 
   return (
-    <div className="relative overflow-hidden flex w-full h-auto justify-center items-center">
+    <div className="relative overflow-hidden flex w-full h-auto rounded-2xl bg-dark/20 dark:bg-light/20 p-2 justify-center items-center">
       <AnimatePresence initial={false} custom={direction}>
-        <motion.img
-          className="absolute top-0 left-0 w-full h-auto"
+        <motion.div
+          className="absolute top-1 left-1 w-[calc(100%-8px)] h-auto"
           key={page}
-          src={images[imageIndex]}
           custom={direction}
           variants={variants}
           initial="enter"
@@ -94,14 +93,24 @@ export const ImageSlideShow = ({ images }: { images: string[] }) => {
               paginate(-1);
             }
           }}
-        />
+        >
+          <Image
+            src={images[imageIndex]}
+            alt={`Project screenshot ${imageIndex}`}
+            className="w-full h-auto rounded-xl"
+            width={1280}
+            height={720}
+            priority
+            sizes="(max-width: 768px) 100vw, (max-wdith: 1280px) 50vw, 50vw"
+          />
+        </motion.div>
       </AnimatePresence>
       <Image
         alt="placeholder"
         src={images[0]}
         width={1280}
         height={720}
-        className="invisible w-full h-auto rounded-xl border-2 dark:border-light border-dark"
+        className="invisible w-[calc(100%-8px)] h-auto rounded-xl border-2 dark:border-light border-dark"
         priority
         sizes="(max-width: 768px) 100vw, (max-wdith: 1280px) 50vw, 33vw"
       />
