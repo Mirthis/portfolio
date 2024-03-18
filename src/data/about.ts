@@ -2,7 +2,7 @@ export const aboutData = {
   title: "Passion Fuels Purpose!",
   bio: [
     "Hi, I'm Andrea, I'm a full-stack web engineer and I'm passionate about technology, coding and building modern and innovative applications.",
-    "I built my first website in the web 1.0 era but life led me down a less technical path. Despite that, my passion for coding persisted, drawing me back to web development time and again. Now, I've decided to transform this enjoyable passtime into a profession that truly ignites my enthusiasm.",
+    "I built my first website in the web 1.0 era but life led me down a less technical path. Despite that, my passion for coding persisted, drawing me back to web development time and again. Now, I've decided to transform this enjoyable hobby into a profession that truly ignites my enthusiasm.",
     "When I work on a new project, I always try to bring a fresh and innovative approach to the table, and I am always looking for new and better ways to solve problems and create intuitive, enjoyable experiences for users.",
     "I look forward to the opportunity to bring my skills, expertise and passion to your next project.",
   ],
@@ -44,7 +44,7 @@ export const aboutData = {
       companyLink: "https://snartapply.app",
       time: "2023-Present",
       address: "Mountain View, CA",
-      work: "Ideated, designed and built the SnartApply.app app including front-end, back-end and integration with Open AI's GPT-3 API",
+      work: "Ideated, designed and built the SmartApply.app app including front-end, back-end and integration with Open AI's GPT-3 API",
     },
     {
       position: "Full Stack Engineer",

@@ -24,7 +24,7 @@ export const experiences = [
     companyLink: "https://snartapply.app",
     time: "2023-Present",
     address: "Mountain View, CA",
-    work: "Ideated, designed and built the SnartApply.app app including front-end, back-end and integration with Open AI's GPT-3 API",
+    work: "Ideated, designed and built the SMartApply.app app including front-end, back-end and integration with Open AI's GPT-3 API",
   },
   {
     position: "Full Stack Engineer",
@@ -123,7 +123,7 @@ export const projectsData = {
     image: "pok.jpg",
     title: "PoK NFT Viewer",
     summary:
-      "This simple web app allows to browse Proof of Knowlege NFTs and display the one owned by the user based on their wallet address.",
+      "This simple web app allows to browse Proof of Knowledge NFTs and display the one owned by the user based on their wallet address.",
     type: "Front-end / Web3",
     url: "https://pok-nfts.vercel.app/",
     githubUrl: "https://github.com/Mirthis/pok-nfts",
@@ -134,7 +134,7 @@ export const projectsData = {
     image: "cryptoverse.jpg",
     title: "Cryptoverse",
     summary:
-      "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
+      "Basic app leveraging CoinRanking API via RapidApi to retrieve crypto currencies data and news.",
     type: "Front-end",
     url: "https://cryptoverse-mirthis.netlify.app/",
     githubUrl: "https://github.com/Mirthis/cryptoverse-webapp",
@@ -145,7 +145,7 @@ export const projectsData = {
     image: "portfolio-v1.jpg",
     title: "Portfolio v1",
     summary:
-      "Basic app leveraging CoinRanking API via RapidApi to retreive crypto currencies data and news.",
+      "Basic app leveraging CoinRanking API via RapidApi to retrieve crypto currencies data and news.",
     type: "Front-end",
     url: "https://portfolio-v1-six-rose.vercel.app/",
     githubUrl: "https://github.com/Mirthis/portfolio-v1",

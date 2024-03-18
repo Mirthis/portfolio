@@ -4,7 +4,7 @@ const Pok = () => {
   return (
     <>
       <p>
-        The app allows to browse Proof of knowlege NFTs and display the one
+        The app allows to browse Proof of knowledge NFTs and display the one
         owned by the user based on their wallet address.
       </p>
       <p>This was built as part of a job interview</p>

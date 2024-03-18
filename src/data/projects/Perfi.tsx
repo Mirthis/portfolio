@@ -18,14 +18,14 @@ const Perfi = () => {
       </h2>
       <ul>
         <li>
-          Connet to financial institutions and retrieve accounts (UK only))
+          Connect to financial institutions and retrieve accounts (UK only))
         </li>
         <li>
           Retrieve accounts and display basic stats (balance, recent spending)
-          and cagegorized transactions
+          and categorized transactions
         </li>
         <li>List transactions by category, month, account</li>
-        <li>Display aggragated view of spending data using charts</li>
+        <li>Display aggregated view of spending data using charts</li>
         <li>
           Exclude/include individual transactions or all transactions in a
           specific category from spending view

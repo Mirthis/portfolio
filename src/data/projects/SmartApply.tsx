@@ -2,7 +2,7 @@ const SmartApply = () => {
   return (
     <>
       <p>
-        Ppersonalized cover letters, interview simulation and multiple choice
+        Personalized cover letters, interview simulation and multiple choice
         questions to help you land your dream job.
       </p>
       <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
