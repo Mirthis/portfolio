@@ -45,7 +45,6 @@ const Project = ({
         </span>
         <Link
           href={`projects/${id}`}
-          target="_blank"
           className="hover:undeline underline-offset-2"
         >
           <h2 className=" w-full text-left text-3xl font-bold lg:text-2xl">
