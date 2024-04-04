@@ -146,7 +146,7 @@ export const projectsData = {
     title: "Portfolio v1",
     summary:
       "Basic app leveraging CoinRanking API via RapidApi to retrieve crypto currencies data and news.",
-npm     type: "Front-end",
+    type: "Front-end",
     url: "https://portfolio-v1-six-rose.vercel.app/",
     githubUrl: "https://github.com/Mirthis/portfolio-v1",
     techs: ["Next.js", "React", "Tailwind CSS"],
