@@ -6,9 +6,11 @@ import {
   MUIIcon,
   NextIcon,
   OpenAIIcon,
+  PayloadIcon,
   PostgresIcon,
   Prisma,
   ReactIcon,
+  SQLite,
   Shadcnui,
   Stripe,
   T3,
@@ -32,6 +34,8 @@ export const techIcons = {
   "T3 Stack": T3,
   Stripe: Stripe,
   Clerk: Clerk,
+  "Payload CMS": PayloadIcon,
+  SQLite: SQLite,
 };
 
 const getTechIcon = (tech: string) => {

@@ -16,7 +16,7 @@ export const aboutData = {
       description: "Projects completed",
     },
     {
-      stat: 2,
+      stat: 3,
       description: "years of experience",
     },
   ],
@@ -33,9 +33,23 @@ export const aboutData = {
   experiences: [
     {
       position: "Full Stack Engineer",
+      company: "Zero10 Labs",
+      companyLink: "https://zero10.ar/",
+      time: "2025-Present",
+      work: "Led development of web-based projects and admin tools at Zero10 Labs, building modern UIs and video management features with React and Next.js, and collaborating with cross-functional teams to deliver business-aligned solutions.",
+    },
+    {
+      position: "Full Stack Engineer",
+      company: "Buildright.ai",
+      companyLink: "https://www.buildright.ai/",
+      time: "2024-2025",
+      work: "Lead full stack development of Buildright.ai’s micro-learning portal from concept to v1.0, collaborating with founders to deliver scalable, user-friendly solutions using Next.js, React, and Node.js.",
+    },
+    {
+      position: "Full Stack Engineer",
       company: "Self Employed",
-      companyLink: "https://snartapply.app",
-      time: "2022-Present",
+      companyLink: "https://simpledayplanner.com",
+      time: "2022-2024",
       work: "Founded and led the development of SmartApply.app and SimpleDayPlanner.com from ideation to implementation. Developed front-end using Next.js and React, for a seamless user experience. Designed and developed back-end API using Next.js routes and OpenAI chat completion model for content generation",
     },
     {

@@ -1,6 +1,7 @@
 import { techIcons } from "@/components/TechIcon";
 
 import CoverLettersAI from "./projects/CoverLettersAI";
+import LanguagesInLondon from "./projects/LanguagesInLondon";
 import Perfi from "./projects/Perfi";
 import Pok from "./projects/Pok";
 import Portfolio from "./projects/Portfolio";
@@ -24,6 +25,31 @@ type Project = {
 export const projectPageTitle = "Imagination Trumps Knowledge!";
 
 export const projectsData: Project[] = [
+  {
+    id: "languagesinlondon",
+    featured: true,
+    coverImage: "languagesinlondon-1.webp",
+    images: [
+      "languagesinLondon-1.webp",
+      "languagesinLondon-2.webp",
+      "languagesinLondon-3.webp",
+    ],
+    title: "Languages in London",
+    description: LanguagesInLondon(),
+    tagline: "Language Exchange and Social Events",
+    type: "Full-stack",
+    url: "https://www.languages.london/",
+    techs: [
+      "Next.JS",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer",
+      "SQLite",
+      "Shadcn UI",
+      "Payload CMS",
+    ],
+  },
   {
     id: "simpledayplanner",
     featured: true,
