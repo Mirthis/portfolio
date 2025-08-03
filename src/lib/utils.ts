@@ -15,67 +15,44 @@ export function getPageTitle(title?: string) {
 
 export const getMetaDescription = (description?: string) => {
   const baseDescription =
-    "Andrea Cardinale is a full-stack engineer and web developer specializing in React, NextJs, TypeScript and Node.js.";
-  return description ? description : baseDescription;
+    "Andrea Cardinale is a full-stack engineer specializing in React, Next.js, TypeScript, and Node.js. Building modern, scalable web applications.";
+  if (!description) return baseDescription;
+  // Always append base for branding/SEO, but avoid duplicate base
+  return description.includes("Andrea Cardinale")
+    ? description
+    : `${description} | ${baseDescription}`;
 };
 
 export const getMetaKeywords = () => {
   return [
     "Full Stack Development",
     "Web Development",
-    "Front-end",
-    "Back-end",
-    "JavaScript",
-    "HTML",
-    "CSS",
     "React",
-    "Redux",
-    "Next.JS",
-    "JavaScript",
+    "Next.js",
     "TypeScript",
     "Node.js",
-    "Express.js",
-    "PostgreSQL",
     "Tailwind CSS",
-    "Daily UI",
-    "Material UI",
-    "Docker",
-    "Git",
     "T3 Stack",
+    "GraphQL",
+    "API Integration",
+    "PWAs",
+    "AI",
     "SQL",
     "NoSQL",
-    "Artificial Intelligence (AI)",
-    "Responsive Design",
-    "User Experience (UX)",
-    "User Interface (UI)",
-    "API Integration",
-    "RESTful APIs",
-    "Database Management",
-    "Server-side scripting",
-    "Agile Development",
-    "Software Architecture",
-    "Code Optimization",
-    "Cross-browser Compatibility",
-    "Problem-solving",
-    "Debugging",
-    "Mobile Development",
-    "Progressive Web Apps (PWAs)",
+    "Docker",
     "AWS",
-    "DevOps",
-    "Continuous Integration/Continuous Deployment (CI/CD)",
-    "Test-Driven Development (TDD)",
-    "Collaboration",
-    "Innovation",
-    "Scalability",
-    "Security",
-    "Code Reviews",
-    "Automation",
-    "Serverless Architecture",
-    "GraphQL",
+    "Express.js",
+    "PostgreSQL",
+    "Git",
+    "Material UI",
+    "Responsive Design",
+    "User Experience",
+    "User Interface",
     "Microservices",
-    "Software Development Life Cycle (SDLC)",
+    "DevOps",
+    "CI/CD",
+    "Software Architecture",
     "Performance Optimization",
-    "Mobile-First Development",
   ];
 };
 
