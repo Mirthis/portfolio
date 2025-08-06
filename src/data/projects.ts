@@ -30,9 +30,9 @@ export const projectsData: Project[] = [
     featured: true,
     coverImage: "languagesinlondon-1.webp",
     images: [
-      "languagesinLondon-1.webp",
-      "languagesinLondon-2.webp",
-      "languagesinLondon-3.webp",
+      "languagesinlondon-1.webp",
+      "languagesinlondon-2.webp",
+      "languagesinlondon-3.webp",
     ],
     title: "Languages in London",
     description: LanguagesInLondon(),
